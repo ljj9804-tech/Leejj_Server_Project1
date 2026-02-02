@@ -29,6 +29,8 @@ public class _2_TodoRegController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         System.out.println("todo/register 글쓰기 로직 처리하는 곳입니다.");
+        System.out.println("PRG 패턴으로 글쓰기 post 작업 후, 리다이렉트 목록 화면으로 이동하기.");
+        resp.sendRedirect("/todo/list");
     }
 
 }
